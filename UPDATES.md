@@ -1,0 +1,54 @@
+# Dompile: 50 implementation update batches
+
+Each batch groups two shipped user-facing capabilities. This ledger tracks implementation scope rather than Git commits; this workspace has no Git repository.
+
+- **Update 01:** HTML and HTM document input; CSS input bundling.
+- **Update 02:** JavaScript input bundling; MJS input bundling.
+- **Update 03:** multiple stylesheet inputs; multiple script inputs.
+- **Update 04:** automatic local stylesheet inlining; automatic local classic script inlining.
+- **Update 05:** CSS injection into document head; JavaScript injection before document end.
+- **Update 06:** minimal HTML skeleton generation; inline style end-tag escaping.
+- **Update 07:** inline script end-tag escaping; website download over HTTP.
+- **Update 08:** website download over HTTPS; HTTP redirect following.
+- **Update 09:** remote stylesheet inlining; remote classic script inlining.
+- **Update 10:** relative HTML URL absolutizing; CSS URL absolutizing for downloaded stylesheets.
+- **Update 11:** static website HTML output; Electron app project output.
+- **Update 12:** hardened Electron renderer defaults; nested output directory creation.
+- **Update 13:** version reporting; feature listing.
+- **Update 14:** DTML structure validation; JSON validation output.
+- **Update 15:** strict validation mode; quiet mode.
+- **Update 16:** verbose mode; custom output paths.
+- **Update 17:** help text; unsupported extension diagnostics.
+- **Update 18:** missing source diagnostics; dry-run mode.
+- **Update 19:** UTF-8 source handling; HTML doctype warnings.
+- **Update 20:** HTML language warnings; HTML title warnings.
+- **Update 21:** unclosed-tag diagnostics; unexpected-close-tag diagnostics.
+- **Update 22:** mismatched-nesting diagnostics; duplicate-id diagnostics.
+- **Update 23:** HTML template variables; safe HTML escaping for template values.
+- **Update 24:** strict missing-template-variable errors; config-file output defaults.
+- **Update 25:** config-file validation; per-asset byte limits.
+- **Update 26:** CSS @import expansion; CSS import cycle detection.
+- **Update 27:** CSS media query import wrapping; CSS local asset data URIs.
+- **Update 28:** PNG asset embedding; JPEG asset embedding.
+- **Update 29:** GIF asset embedding; WebP asset embedding.
+- **Update 30:** AVIF asset embedding; SVG asset embedding.
+- **Update 31:** icon asset embedding; WOFF font embedding.
+- **Update 32:** WOFF2 font embedding; TrueType font embedding.
+- **Update 33:** OpenType font embedding; EOT font embedding.
+- **Update 34:** local image source embedding; local video source embedding.
+- **Update 35:** local audio source embedding; local poster embedding.
+- **Update 36:** local responsive srcset embedding; missing HTML root error.
+- **Update 37:** missing document head warning; missing document body warning.
+- **Update 38:** missing image alt warnings; unresolved fragment-link errors.
+- **Update 39:** external dependency warnings; new-window rel security warnings.
+- **Update 40:** deprecated HTML element warnings; inline event handler warnings.
+- **Update 41:** empty link target warnings; empty document title checks.
+- **Update 42:** duplicate fragment identifier checks; document structure diagnostics in text mode.
+- **Update 43:** validation diagnostics in JSON mode; CLI configuration file support.
+- **Update 44:** CLI configuration precedence; command option conflict diagnostics.
+- **Update 45:** single-mode enforcement; single-output-option enforcement.
+- **Update 46:** repeatable template definitions; validated template variable names.
+- **Update 47:** CLI output parent directory creation; user-selected Electron output directory.
+- **Update 48:** Electron macOS activation recovery; Electron minimum window dimensions.
+- **Update 49:** Electron generated npm start command; long-form output path alias.
+- **Update 50:** output collision prevention; generated file size reporting.
