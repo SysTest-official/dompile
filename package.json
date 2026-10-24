@@ -1,0 +1,16 @@
+{
+  "name": "dompile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bundle HTML, CSS, and JavaScript into single-file DTML documents",
+  "main": "dompile.js",
+  "bin": {
+    "dompile": "./dompile.js"
+  },
+  "scripts": {
+    "test": "node test/dompile.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
