@@ -1,0 +1,30 @@
+pkgname=dompile
+pkgver=1.0.0
+pkgrel=1
+pkgdesc='Compile HTML, CSS, and JavaScript into portable DTML documents'
+arch=('x86_64')
+url='https://github.com/SysTest-official/dompile'
+license=('MIT')
+depends=('nodejs>=18')
+source=(
+  'dompile::https://github.com/SysTest-official/dompile/releases/download/v1.0.0/dompile-linux-x86_64'
+  'dompile.js::https://raw.githubusercontent.com/SysTest-official/dompile/v1.0.0/dompile.js'
+  'package.json::https://raw.githubusercontent.com/SysTest-official/dompile/v1.0.0/package.json'
+  'README.md::https://raw.githubusercontent.com/SysTest-official/dompile/v1.0.0/README.md'
+  'LICENSE::https://raw.githubusercontent.com/SysTest-official/dompile/v1.0.0/LICENSE'
+)
+sha256sums=(
+  'b42e1bc72d60aec34d0960cee5d87dbd3705f044e37312caf5a01857228a13d9'
+  '8a67e6f7bd463c84805e69726ad67f0a0b013d436cba0b6a745a3cbe6b11479c'
+  'c2d9f571d5f9bd24f40c3c6035b67509b9cd03eefb376f38b2e929129f81abb6'
+  '4879ce9649da2650ba8a6853168561d36477a6743a65c251b4a674575a639f6c'
+  'ef915b81fda605e880826c18e88a32c4d78d58522290bc5da46595c3b07816dc'
+)
+
+package() {
+  install -Dm755 "$srcdir/dompile" "$pkgdir/usr/bin/dompile"
+  install -Dm644 "$srcdir/dompile.js" "$pkgdir/usr/lib/dompile/dompile.js"
+  install -Dm644 "$srcdir/package.json" "$pkgdir/usr/lib/dompile/package.json"
+  install -Dm644 "$srcdir/README.md" "$pkgdir/usr/share/doc/dompile/README.md"
+  install -Dm644 "$srcdir/LICENSE" "$pkgdir/usr/share/doc/dompile/LICENSE"
+}
